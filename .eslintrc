@@ -1,0 +1,55 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "globals": {
+    "VoxImplant": true
+  },
+  "rules": {
+    "no-console": 0,
+    "no-unused-vars": 1,
+    "no-useless-constructor": 0,
+    "react/jsx-uses-react": "error",
+    "semi": ["warn"],
+    "prefer-const": ["warn"],
+    "padded-blocks": ["warn"],
+    "react/jsx-no-comment-textnodes": "error",
+    "react/jsx-uses-vars": [2],
+    "comma-dangle": "off",
+    "max-len": ["error", 100],
+    "indent": ["warn", 2],
+    "quotes": ["warn", "single"],
+    "camelcase": ["warn"],
+    "eqeqeq": ["warn"],
+    "newline-before-return": ["off"],
+    "no-case-declarations": ["off"],
+    "no-invalid-this": "warn",
+    "require-jsdoc": ["off"],
+    "spaced-comment": ["warn"],
+    "quote-props": ["error", "as-needed", {"unnecessary": false}],
+    "operator-linebreak": ["warn"],
+    "linebreak-style": "off",
+    "arrow-parens": ["warn"],
+    "guard-for-in": "warn",
+    "no-prototype-builtins": "warn",
+    "prefer-rest-params": ["warn"],
+    "one-var": ["warn"],
+    "no-var": ["warn"],
+    "react/no-string-refs": ["warn"],
+    "block-spacing": ["warn", "never"],
+    "object-curly-spacing": ["warn", "never"],
+    "space-before-function-paren": ["warn", "never"]
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
+}
