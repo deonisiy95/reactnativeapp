@@ -1,24 +1,9 @@
 import {createAppContainer} from 'react-navigation';
-import {createDrawerNavigator, DrawerActions} from 'react-navigation-drawer';
+import {createDrawerNavigator} from 'react-navigation-drawer';
 import {Button} from 'react-native';
 import React from 'react';
 
-import OrderList from '../order/controllers/OrderList';
-
-class MyHomeScreen extends React.Component {
-  static navigationOptions = {
-    drawerLabel: 'Home',
-  };
-
-  render() {
-    return (
-      <Button
-        onPress={() => this.props.navigation.dispatch(DrawerActions.openDrawer())}
-        title="Go to notifications"
-      />
-    );
-  }
-}
+import orderNavigator from '../navigators/order';
 
 class MyNotificationsScreen extends React.Component {
   static navigationOptions = {
@@ -36,9 +21,7 @@ class MyNotificationsScreen extends React.Component {
 }
 
 const MyDrawerNavigator = createDrawerNavigator({
-  Home: {
-    screen: OrderList,
-  },
+  Home: orderNavigator,
   Notifications: {
     screen: MyNotificationsScreen,
   },
