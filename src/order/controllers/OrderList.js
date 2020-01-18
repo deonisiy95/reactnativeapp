@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import OrderList from '../components/Order/List';
+import DrawerButton from '../../drawer/controllers/DrawerButton';
 
 const data = [
   {title: true, name: 'title'},
@@ -24,7 +25,15 @@ const data = [
 ];
 
 export default class OrderListController extends Component {
+  static navigationOptions = ({navigation}) => {
+    const headerTitle = 'Main';
+    const headerStyle = {backgroundColor: 'orange'};
+    const headerTitleStyle = {fontWeight: 'bold'};
+    const headerLeft = () => <DrawerButton navigation={navigation} />;
+    return {headerTitle, headerStyle, headerTitleStyle, headerLeft};
+  };
+
   render() {
-    return <OrderList orders={data} navigation={this.props.navigation}/>;
+    return <OrderList orders={data} navigation={this.props.navigation} />;
   }
 }

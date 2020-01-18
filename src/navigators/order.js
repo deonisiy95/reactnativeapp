@@ -1,13 +1,17 @@
-import {createSwitchNavigator} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
 
 import Details from '../order/controllers/Details';
 import OrderList from '../order/controllers/OrderList';
 
-export default createSwitchNavigator({
+export default createStackNavigator({
   orderList: {
-    screen: OrderList,
+    screen: OrderList
   },
   details: {
     screen: Details,
-  },
-})
+    navigationOptions: {
+      title: 'Details',
+      headerTitle: 'Details',
+    }
+  }
+});
