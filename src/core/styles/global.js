@@ -22,3 +22,7 @@ export const grayscale0 = '#FFF';
 // borders
 
 export const borderColor = grayscale35;
+
+// theme
+
+export const mainColor = '#455a64';

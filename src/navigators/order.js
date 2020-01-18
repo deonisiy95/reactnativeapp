@@ -8,10 +8,6 @@ export default createStackNavigator({
     screen: OrderList
   },
   details: {
-    screen: Details,
-    navigationOptions: {
-      title: 'Details',
-      headerTitle: 'Details',
-    }
+    screen: Details
   }
 });

@@ -17,6 +17,21 @@ export default StyleSheet.create({
     borderRadius: 8,
     backgroundColor: 'white'
   },
+  hiddenContainer: {
+    flexGrow: 1,
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    paddingLeft: 24,
+    paddingRight: 16,
+    paddingBottom: 8,
+    paddingTop: 8,
+    marginLeft: 8,
+    marginRight: 8,
+    marginBottom: 8,
+    borderRadius: 8,
+    backgroundColor: 'red'
+  },
   name: {
     fontSize: 20,
     color: grayscale100,

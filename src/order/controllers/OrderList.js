@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import OrderList from '../components/Order/List';
 import DrawerButton from '../../drawer/controllers/DrawerButton';
+import {mainColor} from '../../core/styles/global';
 
 const data = [
   {title: true, name: 'title'},
@@ -27,7 +28,7 @@ const data = [
 export default class OrderListController extends Component {
   static navigationOptions = ({navigation}) => {
     const headerTitle = 'Main';
-    const headerStyle = {backgroundColor: 'orange'};
+    const headerStyle = {backgroundColor: mainColor};
     const headerTitleStyle = {fontWeight: 'bold'};
     const headerLeft = () => <DrawerButton navigation={navigation} />;
     return {headerTitle, headerStyle, headerTitleStyle, headerLeft};
