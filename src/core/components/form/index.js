@@ -22,7 +22,7 @@ export default class Logo extends Component<{}> {
           placeholderTextColor={grayscale0}
           ref={input => (this.password = input)}
         />
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => {this.props.onPress && this.props.onPress()}}>
           <Text style={styles.buttonText}>{this.props.type}</Text>
         </TouchableOpacity>
       </View>
